@@ -2,13 +2,13 @@
 body {
     margin: 0;
     padding: 25px;
-    background: #eef2f7;
+    background: #1c2127;
     color: #263247;
     font-family: Arial, sans-serif;
 }
 main { max-width: 900px; margin: auto; }
-h1 { margin-bottom: 5px; color: #214a80; }
-.intro { margin-top: 0; color: #65748b; }
+h1 { margin-bottom: 5px; color: #3185f1; }
+.intro { margin-top: 0; color: #212325; }
 .painel {
     background: white;
     padding: 20px;
