@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($acao === "recarregar") {
         foreach ($robos as &$dados) {
             if ($dados["id"] === ($_POST["id"] ?? "")) {
-                $robo = new Robo($dados["nome"], $dados["modelo"], $dados["energia"], $dados["potencia"]);
+                $robo = new Robo ($dados["nome"], $dados["modelo"], $dados["energia"], $dados["potencia"]);
                 $robo->recarregar();
                 $dados["energia"] = $robo->energia;
                 $_SESSION["operador"] = $dados["operador"];
@@ -64,7 +64,7 @@ if ($filtro !== "Todos" && !isset($modelos[$filtro])) $filtro = "Todos";
 $lista = array_filter($robos, function ($robo) use ($filtro) {
     return $filtro === "Todos" || $robo["modelo"] === $filtro;
 });
-function h($texto) {
+function h( $texto) {
     return htmlspecialchars((string)$texto, ENT_QUOTES, "UTF-8");
 }
 ?>
