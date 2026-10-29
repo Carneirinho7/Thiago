@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 25px;
+    background: #eef2f7;
+    color: #263247;
+    font-family: Arial, sans-serif;
+}
+main { max-width: 900px; margin: auto; }
+h1 { margin-bottom: 5px; color: #214a80; }
+.intro { margin-top: 0; color: #65748b; }
+.painel {
+    background: white;
+    padding: 20px;
+    margin: 18px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+label { display: block; margin: 12px 0 5px; font-weight: bold; }
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd4df;
+    border-radius: 5px;
+}
+button {
+    margin-top: 12px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    background: #2864ad;
+    color: white;
+    cursor: pointer;
+}
+button:hover { background: #194b88; }
+.mensagem, .boas-vindas {
+    padding: 12px;
+    background: #dcefe4;
+    border-radius: 6px;
+}
+.filtro { display: flex; align-items: end; gap: 10px; }
+.filtro label { min-width: 150px; }
+.robo {
+    margin-top: 14px;
+    padding: 15px;
+    border-left: 5px solid #3979d6;
+    border-radius: 6px;
+    background: #f7f9fc;
+}
+.robo.engenheiro { border-color: #26976c; }
+.robo.defensor { border-color: #d64d6c; }
+.robo h3 { margin-top: 0; }
+.robo small { color: #65748b; }
+.rodape { text-align: center; color: #65748b; margin: 25px; }
+@media (max-width: 550px) {
+    body { padding: 12px; }
+    .filtro { display: block; }
+}
